@@ -40,6 +40,11 @@ public partial class PhysicalObjectViewModel : ViewModelBase
     private ObservableCollection<ObservableHardpoint> _hardpoints = new();
     public int Count => Hardpoints.Count;
 
+    public PhysicalObjectViewModel()
+    {
+        physicalObject = new();
+    }
+
     public PhysicalObjectViewModel(PhysicalObject physicalObject)
     {
         this.physicalObject = physicalObject;

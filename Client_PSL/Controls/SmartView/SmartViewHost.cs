@@ -70,7 +70,7 @@ public class SmartViewHost : Canvas
     public SmartViewHost()
     {
         logger.SetLevel(50);
-        LoadConfig("default");
+        LoadConfig(ISettings.Data.SmartView.DefaultConfigName);
 
         logger.Log("Initialized SmartViewHost with default configuration.");
     }

@@ -33,6 +33,7 @@ public class SmartViewSettings : INotifyPropertyChanged, ISettingsModule
             {
                 _defaultConfigName = value;
                 OnPropertyChanged(nameof(DefaultConfigName));
+                Save();
             }
         }
     }
